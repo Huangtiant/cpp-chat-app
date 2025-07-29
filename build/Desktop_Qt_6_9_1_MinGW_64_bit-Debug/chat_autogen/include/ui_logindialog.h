@@ -41,7 +41,7 @@ public:
     QLabel *label_2;
     QHBoxLayout *horizontalLayout_4;
     QSpacerItem *horizontalSpacer_2;
-    QPushButton *pushButton;
+    QPushButton *confirm_button;
     QSpacerItem *horizontalSpacer_3;
     QHBoxLayout *horizontalLayout_5;
     QSpacerItem *horizontalSpacer_4;
@@ -56,7 +56,9 @@ public:
     {
         if (LoginDialog->objectName().isEmpty())
             LoginDialog->setObjectName("LoginDialog");
-        LoginDialog->resize(457, 520);
+        LoginDialog->resize(300, 500);
+        LoginDialog->setMinimumSize(QSize(300, 500));
+        LoginDialog->setMaximumSize(QSize(300, 500));
         verticalLayout = new QVBoxLayout(LoginDialog);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout_2 = new QVBoxLayout();
@@ -126,11 +128,11 @@ public:
 
         horizontalLayout_4->addItem(horizontalSpacer_2);
 
-        pushButton = new QPushButton(LoginDialog);
-        pushButton->setObjectName("pushButton");
-        pushButton->setMinimumSize(QSize(100, 30));
+        confirm_button = new QPushButton(LoginDialog);
+        confirm_button->setObjectName("confirm_button");
+        confirm_button->setMinimumSize(QSize(100, 30));
 
-        horizontalLayout_4->addWidget(pushButton);
+        horizontalLayout_4->addWidget(confirm_button);
 
         horizontalSpacer_3 = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
 
@@ -192,7 +194,7 @@ public:
         user_label->setText(QCoreApplication::translate("LoginDialog", "\347\224\250\346\210\267", nullptr));
         pass_lable->setText(QCoreApplication::translate("LoginDialog", "\345\257\206\347\240\201", nullptr));
         label_2->setText(QCoreApplication::translate("LoginDialog", "\345\277\230\350\256\260\345\257\206\347\240\201", nullptr));
-        pushButton->setText(QCoreApplication::translate("LoginDialog", "\347\231\273\345\275\225", nullptr));
+        confirm_button->setText(QCoreApplication::translate("LoginDialog", "\347\231\273\345\275\225", nullptr));
         reg_button->setText(QCoreApplication::translate("LoginDialog", "\346\263\250\345\206\214", nullptr));
         label->setText(QString());
     } // retranslateUi

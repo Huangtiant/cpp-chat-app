@@ -75,13 +75,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 73,
+				"line" : 74,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 56,
+				"line" : 57,
 				"parent" : 0
 			},
 			{
@@ -381,7 +381,7 @@
 				2,
 				7,
 				11,
-				18
+				19
 			]
 		}
 	],
@@ -507,7 +507,7 @@
 				2,
 				7,
 				11,
-				18
+				19
 			]
 		},
 		{
@@ -519,7 +519,8 @@
 				10,
 				14,
 				15,
-				16
+				16,
+				17
 			]
 		},
 		{
@@ -537,7 +538,7 @@
 			[
 				5,
 				13,
-				17
+				18
 			]
 		},
 		{
@@ -551,8 +552,8 @@
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				19,
-				20
+				20,
+				21
 			]
 		}
 	],
@@ -633,6 +634,11 @@
 			"backtrace" : 4,
 			"path" : "style/stylesheet.qss",
 			"sourceGroupIndex" : 3
+		},
+		{
+			"backtrace" : 4,
+			"path" : "global.h",
+			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,

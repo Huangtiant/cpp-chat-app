@@ -31,6 +31,10 @@ public:
     QStackedWidget *stackedWidget;
     QWidget *page;
     QVBoxLayout *verticalLayout_3;
+    QWidget *widget;
+    QVBoxLayout *verticalLayout_4;
+    QSpacerItem *verticalSpacer_4;
+    QLabel *err_tip;
     QSpacerItem *verticalSpacer_3;
     QHBoxLayout *horizontalLayout;
     QLabel *user_label;
@@ -42,8 +46,8 @@ public:
     QLabel *pass_label;
     QLineEdit *pass_edit;
     QHBoxLayout *horizontalLayout_4;
-    QLabel *label;
-    QLineEdit *lineEdit;
+    QLabel *confirm_label;
+    QLineEdit *confirm_edit;
     QHBoxLayout *horizontalLayout_5;
     QLabel *verify_label;
     QLineEdit *verify_edit;
@@ -59,7 +63,9 @@ public:
     {
         if (RegisterDialog->objectName().isEmpty())
             RegisterDialog->setObjectName("RegisterDialog");
-        RegisterDialog->resize(263, 292);
+        RegisterDialog->resize(300, 500);
+        RegisterDialog->setMinimumSize(QSize(300, 500));
+        RegisterDialog->setMaximumSize(QSize(300, 500));
         verticalLayout = new QVBoxLayout(RegisterDialog);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout_2 = new QVBoxLayout();
@@ -70,6 +76,23 @@ public:
         page->setObjectName("page");
         verticalLayout_3 = new QVBoxLayout(page);
         verticalLayout_3->setObjectName("verticalLayout_3");
+        widget = new QWidget(page);
+        widget->setObjectName("widget");
+        verticalLayout_4 = new QVBoxLayout(widget);
+        verticalLayout_4->setObjectName("verticalLayout_4");
+        verticalSpacer_4 = new QSpacerItem(20, 40, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
+
+        verticalLayout_4->addItem(verticalSpacer_4);
+
+        err_tip = new QLabel(widget);
+        err_tip->setObjectName("err_tip");
+        err_tip->setAlignment(Qt::AlignmentFlag::AlignCenter);
+
+        verticalLayout_4->addWidget(err_tip);
+
+
+        verticalLayout_3->addWidget(widget);
+
         verticalSpacer_3 = new QSpacerItem(20, 40, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
 
         verticalLayout_3->addItem(verticalSpacer_3);
@@ -97,9 +120,9 @@ public:
         horizontalLayout_2->setObjectName("horizontalLayout_2");
         email_label = new QLabel(page);
         email_label->setObjectName("email_label");
-        email_label->setMinimumSize(QSize(30, 0));
+        email_label->setMinimumSize(QSize(0, 0));
         email_label->setMaximumSize(QSize(30, 20));
-        email_label->setAlignment(Qt::AlignmentFlag::AlignCenter);
+        email_label->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter);
 
         horizontalLayout_2->addWidget(email_label);
 
@@ -107,6 +130,7 @@ public:
         email_edit->setObjectName("email_edit");
         email_edit->setMinimumSize(QSize(0, 20));
         email_edit->setMaximumSize(QSize(16777215, 20));
+        email_edit->setAlignment(Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter);
 
         horizontalLayout_2->addWidget(email_edit);
 
@@ -133,18 +157,18 @@ public:
 
         horizontalLayout_4 = new QHBoxLayout();
         horizontalLayout_4->setObjectName("horizontalLayout_4");
-        label = new QLabel(page);
-        label->setObjectName("label");
-        label->setMaximumSize(QSize(30, 20));
-        label->setAlignment(Qt::AlignmentFlag::AlignCenter);
+        confirm_label = new QLabel(page);
+        confirm_label->setObjectName("confirm_label");
+        confirm_label->setMaximumSize(QSize(30, 20));
+        confirm_label->setAlignment(Qt::AlignmentFlag::AlignCenter);
 
-        horizontalLayout_4->addWidget(label);
+        horizontalLayout_4->addWidget(confirm_label);
 
-        lineEdit = new QLineEdit(page);
-        lineEdit->setObjectName("lineEdit");
-        lineEdit->setMinimumSize(QSize(0, 20));
+        confirm_edit = new QLineEdit(page);
+        confirm_edit->setObjectName("confirm_edit");
+        confirm_edit->setMinimumSize(QSize(0, 20));
 
-        horizontalLayout_4->addWidget(lineEdit);
+        horizontalLayout_4->addWidget(confirm_edit);
 
 
         verticalLayout_3->addLayout(horizontalLayout_4);
@@ -214,10 +238,11 @@ public:
     void retranslateUi(QDialog *RegisterDialog)
     {
         RegisterDialog->setWindowTitle(QCoreApplication::translate("RegisterDialog", "Dialog", nullptr));
+        err_tip->setText(QCoreApplication::translate("RegisterDialog", "\351\224\231\350\257\257\346\217\220\347\244\272", nullptr));
         user_label->setText(QCoreApplication::translate("RegisterDialog", "\347\224\250\346\210\267", nullptr));
         email_label->setText(QCoreApplication::translate("RegisterDialog", "\351\202\256\347\256\261", nullptr));
         pass_label->setText(QCoreApplication::translate("RegisterDialog", "\345\257\206\347\240\201", nullptr));
-        label->setText(QCoreApplication::translate("RegisterDialog", "\347\241\256\350\256\244", nullptr));
+        confirm_label->setText(QCoreApplication::translate("RegisterDialog", "\347\241\256\350\256\244", nullptr));
         verify_label->setText(QCoreApplication::translate("RegisterDialog", "\351\252\214\350\257\201\347\240\201", nullptr));
         getcode_button->setText(QCoreApplication::translate("RegisterDialog", "\350\216\267\345\217\226", nullptr));
         cancel_button->setText(QCoreApplication::translate("RegisterDialog", "\347\241\256\350\256\244", nullptr));

@@ -1130,3 +1130,5 @@ D:/Personal/myproject/chat/logindialog.h
  mdp:D:/Programs/qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
 D:/Personal/myproject/chat/logindialog.cpp
  uic:ui_logindialog.h
+D:/Personal/myproject/chat/global.h
+D:/Personal/myproject/chat/global.cpp

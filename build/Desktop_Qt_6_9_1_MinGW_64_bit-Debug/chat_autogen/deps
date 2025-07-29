@@ -6,6 +6,8 @@ chat_autogen/timestamp: \
 	D:/Personal/myproject/chat/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeRCCompiler.cmake \
 	D:/Personal/myproject/chat/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake \
 	D:/Personal/myproject/chat/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/chat_autogen/moc_predefs.h \
+	D:/Personal/myproject/chat/global.cpp \
+	D:/Personal/myproject/chat/global.h \
 	D:/Personal/myproject/chat/logindialog.cpp \
 	D:/Personal/myproject/chat/logindialog.h \
 	D:/Personal/myproject/chat/main.cpp \

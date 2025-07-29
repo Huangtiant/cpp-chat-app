@@ -357,6 +357,12 @@
 	"HEADERS" : 
 	[
 		[
+			"D:/Personal/myproject/chat/global.h",
+			"MU",
+			"EWIEGA46WW/moc_global.cpp",
+			null
+		],
+		[
 			"D:/Personal/myproject/chat/logindialog.h",
 			"MU",
 			"EWIEGA46WW/moc_logindialog.cpp",
@@ -446,6 +452,7 @@
 	"SETTINGS_FILE" : "D:/Personal/myproject/chat/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/CMakeFiles/chat_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "D:/Personal/myproject/chat/global.cpp", "MU", null ],
 		[ "D:/Personal/myproject/chat/logindialog.cpp", "MU", null ],
 		[ "D:/Personal/myproject/chat/main.cpp", "MU", null ],
 		[ "D:/Personal/myproject/chat/mainwindow.cpp", "MU", null ],
