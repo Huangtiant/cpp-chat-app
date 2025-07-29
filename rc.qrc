@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/Heat-Cold-and-Energy-Science-of-Ice.jpg</file>
+        <file>style/stylesheet.qss</file>
+    </qresource>
+</RCC>
